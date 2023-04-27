@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul > li {
+  list-style: none;
+}
+
+nav ul .navLink {
+  margin-right: 47px;
+}
+
+nav ul .navLink a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+nav ul .logo {
+  margin-right: 72px;
+}
+
+.hero {
+  height: 100vh;
+  max-height: 100vh;
+  background: url("/images/niawebbk-01\ 1.svg");
+  padding-top: 1rem;
+  background-size: cover;
+}
+
+.search li {
+  position: relative;
+}
+.search input {
+  width: 326px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 500px;
+  border: 0;
+}
+.search i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+
+/* HeroSection */
+.heroContent {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 42px 0 42px;
+  height: inherit;
+}
+
+.heroContent img {
+  position: absolute;
+  width: 1107px;
+  top: -72px;
+  left: 403px;
+  touch-action: none;
+  pointer-events: none;
+  }
+
+.heroContent .clubInfo {
+  height: 65%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  letter-spacing: 0.2px;
+  z-index: 2;
+}
+
+.heroContent .clubInfo .clubName h1{
+  font-size: 80px;
+  line-height: 170px;
+  font-family: 'Arvo', serif;
+}
+
+.heroContent .clubInfo .clubName h3 {
+  font-size: 50px;
+  line-height: 24px;
+}
+
+.nextMatch {
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 443.76px;
+  height: 110px;
+  background-color: #faf8f8;
+  border-radius: 400px;
+}
+
+.dots {
+  height: 80%;
+  border: 1px dashed black;
+  color: #787878;
+  align-self: flex-end;
+}
+
+.nextMatch .next, .muda h4 {
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+}
+
+.nextMatch .next h4{
+  color: #4B188B;
+}
+
+.nextMatch .next h4 span, .wakati h4, p{
+  color: #262F3E;
+}
+
+.nextMatch .muda {
+  display: flex;
+}
+
+.nextMatch .muda .wakati {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+/* matokeo */
+
+.matokeo {
+  background-color: #f1f1f1;
+  min-height: 253px;
+  display: flex;
+  justify-content: center;
+  padding: 0 115px 0 115px;
+  align-items: center;
+}
+
+.matokeo .cards {
+  display: flex;
+}
+
+.matokeoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+  width: 281.25px;
+  min-height: 120px;
+  border-radius: 25px;
+  margin-right: 71px;
+}
+
+.matokeoContainer img {
+  width: 60px;
+  height: 60px;
+}
+
+.matokeo .matokeoContainer .date, .league {
+  font-size: 10.5px;
+  line-height: 24px;
+  color: #6C757D;
+  text-align: center;
+}
+
+.matokeo .matokeoContainer .magoli {
+  font-size: 36px;
+  line-height: 27px;
+  color: #262F3E;
+  font-weight: 600;
+}
+
+.matokeo .matokeoContainer p {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading p {
+  color: #4B188B;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 5px;
+}
+
+.heading h2 {
+  font-family: "arvo", sans-serif;
+  font-size: 33px;
+  color: #262F3E;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+
+/* kikosi */
+
+.kikosi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #C6A0F8;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.kikosi .cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.kikosi .cards .card {
+  position: relative;
+  min-height: 357.5px;
+  overflow: hidden;
+  width: 244.15px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.17);
+}
+
+.kikosi .cards .card img {
+  width: 100%;
+  height: 228px;
+  object-fit: cover;
+}
+
+.kikosi .cards .card .bottom {
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+.kikosi .cards .card p {
+  font-weight: bold;
+  color: #262F3E;
+  font-size: 14px;
+  line-height: 25px;
+}
+.kikosi .cards .card h5 {
+  font-weight: bold;
+  color: #787878;
+  line-height: 25px;
+}
+
+.kikosi h2 {
+  font-size: 45px;
+  color: #4B188B;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: "arvo", sans-serif;
+  margin-bottom: 64px;
+}
+
+.kikosi .cards h2 {
+  position: absolute;
+  font-size: 32px;
+  left: 1rem;
+  top: 1rem;
+}
+
+
