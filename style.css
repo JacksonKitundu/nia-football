@@ -9,6 +9,10 @@ html {
   letter-spacing: 0.2px;
 }
 
+body {
+  /* overflow-x: hidden; */
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -96,7 +100,7 @@ nav ul .logo {
 }
 
 .heroContent .clubInfo .clubName h1{
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 170px;
   font-family: 'Arvo', serif;
 }
@@ -112,7 +116,7 @@ nav ul .logo {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  width: 443.76px;
+  width: 27.76rem;
   height: 110px;
   background-color: #faf8f8;
   border-radius: 400px;
@@ -127,7 +131,7 @@ nav ul .logo {
 
 .nextMatch .next, .muda h4 {
   font-family: 'Arvo', serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 30px;
   letter-spacing: 0.2px;
   font-weight: 700;
@@ -157,7 +161,9 @@ nav ul .logo {
   padding: 3rem 2rem 3rem 2rem;
   background-color: #f1f1f1;
   min-height: 253px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -165,10 +171,13 @@ nav ul .logo {
 
 .matokeo .cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem 4.4rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-right: 71px;
+  columns: span 2;
 }
 
 .matokeoContainer {
@@ -178,10 +187,10 @@ nav ul .logo {
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: white;
-  width: 281.25px;
+  width: 281px;
   min-height: 120px;
   border-radius: 25px;
-  margin-right: 71px;
+  /* margin-right: 71px; */
 }
 
 .matokeoContainer img {
@@ -216,14 +225,14 @@ nav ul .logo {
 
 .heading p {
   color: #4B188B;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 35px;
   letter-spacing: 5px;
 }
 
 .heading h2 {
   font-family: "arvo", sans-serif;
-  font-size: 33px;
+  font-size: 2.06rem;
   color: #262F3E;
   line-height: 40px;
   letter-spacing: 5px;
@@ -244,19 +253,23 @@ nav ul .logo {
 
 .kikosi .cards {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(244px, auto));
   gap: 1rem;
   justify-content: center;
+  height: 100%;
+  place-items: center;
+  align-items: center;
+  width: 80%;
 }
 
 .kikosi .cards .card {
   position: relative;
   min-height: 357.5px;
   overflow: hidden;
-  width: 244.15px;
-  border-radius: 25px;
+  max-width: 244px;
+  border-radius: 10px;
   background-color: white;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.17);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 4px;
 }
 
 .kikosi .cards .card img {
@@ -302,7 +315,7 @@ nav ul .logo {
   min-height: 90vh;
   padding: 6.25rem 2rem 6.25rem 2rem;
   background-color: #f8f8f8;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .msimamo .subTitle {
@@ -320,12 +333,15 @@ nav ul .logo {
 }
 
 .msimamo table {
-  /* border-spacing: 100px 10px; */
+  display: block;
   border-collapse: collapse;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  overflow-x: auto;
+  max-width: fit-content;
 }
-
+ 
 .msimamo table td, th {
   padding: 10px 100px 10px ;
 }
@@ -413,7 +429,7 @@ nav ul .logo {
   align-items: center;
   background-color: #f8f8f8;
   min-height: 90vh;
-  padding: 6.25rem 2rem 6.25rem 2rem;
+  padding: 6.25rem 1rem 6.25rem 1rem;
 }
 
 .picha h2 {
@@ -431,24 +447,30 @@ nav ul .logo {
   gap: 1rem;
 }
 
+.picha .pichaContainer img {
+  background-color: white;
+  border-radius: 5px;
+}
+
 /* footer */
 footer {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
-  min-height: 100vh;
+  padding: 3rem 1rem 3rem 1rem;
+  min-height: 80vh;
   color: #f8f8f8;
   background-color: #f8f8f8;
-  background: url("images/footerBackground.svg");
+  background-image: url("images/footerBackground.svg");
   background-size: cover;
 }
 
 footer .upperFooter .form p{
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 60px;
   margin-bottom: 50px;
+  margin-top: 50px;
   font-family: "arvo", sans-serif;
 }
 
@@ -486,6 +508,9 @@ footer .upperFooter, .lowerFooter {
   width: 50%;
   display: flex;
   align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -502,7 +527,6 @@ footer .address {
 
 footer .address h5 {
   font-size: 25px;
-
 }
 
 footer .lowerFooter .socials {
@@ -526,4 +550,124 @@ footer .lowerFooter .socials a {
 
 footer .lowerFooter .socials a:hover {
   color: #4B188B;
+}
+
+/* all desktop */
+
+
+
+
+
+/* all mobile */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1100px) {
+  .kikosi {
+    padding: 100px 1rem 100px 1rem;
+  }
+  
+  .kikosi .cards {
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+  .kikosi .cards .card {
+    width: 100%;
+    border-radius: 25px;
+    min-height: 300px;
+  }
+  .kikosi .cards .card img {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .nextMatch {
+    width: 100%;
+    gap: .8rem;
+  }
+
+  .nextMatch .muda .wakati {
+    margin: .5rem;
+  }
+
+  .nextMatch .next h4 {
+    font-size: .8rem;
+  }
+
+  .matokeo {
+    grid-template-columns: auto;
+  }
+
+  .matokeo .cards {
+    grid-row: 2;
+    margin-right: 0;
+  }
+  
+  .mafanikio .mafanikioPara {
+    max-width: 90%;
+  }
+  .mafanikio .title {
+    line-height: 80px;
+  }
+
+  footer .upperFooter, .lowerFooter {
+    width: 100%;
+  }
+  footer .upperFooter .form p{
+    font-size: 1.5rem;
+    line-height: 60px;
+    margin-bottom: 50px;
+    font-family: "arvo", sans-serif;
+  }
+  footer .upperFooter form input, button {
+    padding: 15px;
+  }
+  footer .address h5 {
+    font-size: 20px;
+  }
+
+  
+  nav .navLinks a, .search{
+    display: none;
+  }
+  nav .navLinks .navLink {
+    margin: 0;
+  }
+
+  .heroContent {
+    padding: 0 22px 0 22px;
+  }
+  .heroContent img {
+    display: none;
+  }
+  .heroContent .clubInfo {
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .heroContent .clubInfo .clubName h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .heroContent .clubInfo .clubName h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .heroContent .clubInfo .clubName h1, h3 {
+    line-height: unset;
+  }
+
+  .picha img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Extra large devices */
+@media only screen and (min-width: 1200px) {
+
 }
