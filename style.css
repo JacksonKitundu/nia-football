@@ -7,10 +7,7 @@
 html {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.2px;
-}
-
-body {
-  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -466,18 +463,15 @@ footer {
   background-size: cover;
 }
 
-footer .upperFooter .form p{
-  font-size: 2.5rem;
-  line-height: 60px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-family: "arvo", sans-serif;
+footer .upperFooter .form h4{
+  margin-bottom: 1rem;
+  line-height: 32px;
 }
 
 footer .upperFooter form input, button {
-  margin: 0;
   border: none;
   outline: none;
+  font-size: .75rem;
   padding: 20px;
 }
 
@@ -488,7 +482,7 @@ footer form {
 footer .upperFooter form input {
   border-radius: 100px 0 0 100px;
   color: #262F3E;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 footer .upperFooter form button {
@@ -507,7 +501,7 @@ footer .upperFooter form button:hover {
 footer .upperFooter, .lowerFooter {
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
   flex-wrap: wrap;
@@ -521,7 +515,7 @@ footer .upperFooter, .lowerFooter {
 footer .address {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: .5rem;
   line-height: 32px;
 } 
 
@@ -571,8 +565,6 @@ footer .lowerFooter .socials a:hover {
     gap: 1rem;
   }
   .kikosi .cards .card {
-    width: 100%;
-    border-radius: 25px;
     min-height: 300px;
   }
   .kikosi .cards .card img {
@@ -613,10 +605,7 @@ footer .lowerFooter .socials a:hover {
     width: 100%;
   }
   footer .upperFooter .form p{
-    font-size: 1.5rem;
-    line-height: 60px;
-    margin-bottom: 50px;
-    font-family: "arvo", sans-serif;
+    font-size: 1rem;
   }
   footer .upperFooter form input, button {
     padding: 15px;
@@ -660,14 +649,5 @@ footer .lowerFooter .socials a:hover {
     width: 100%;
     height: auto;
   }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-/* Extra large devices */
-@media only screen and (min-width: 1200px) {
 
 }
