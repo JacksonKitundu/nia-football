@@ -10,15 +10,25 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  place-content: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 0 auto;
 }
 
 nav ul {
   display: flex;
+  justify-content: space-around;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -26,26 +36,24 @@ nav ul > li {
   list-style: none;
 }
 
-nav ul .navLink {
-  margin-right: 47px;
-}
-
 nav ul .navLink a {
   text-decoration: none;
   font-weight: bold;
   color: white;
-  letter-spacing: 0.2px;
-  line-height: 24px;
 }
 
 nav ul .logo {
-  margin-right: 72px;
+  margin-right: 5rem;
+}
+
+nav ul .logo img {
+  width: 60px;
+  height: auto;
 }
 
 .hero {
   height: 100vh;
-  max-height: 100vh;
-  background: url("/images/niawebbk-01\ 1.svg");
+  background: url("/images/heroBk.svg");
   padding-top: 1rem;
   background-size: cover;
 }
@@ -55,7 +63,6 @@ nav ul .logo {
 }
 .search input {
   width: 326px;
-  height: 40px;
   padding: 10px;
   border-radius: 500px;
   border: 0;
