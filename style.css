@@ -28,7 +28,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
-  gap: 3rem;
+  min-width: 60%;
   align-items: center;
 }
 
@@ -46,7 +46,7 @@ nav ul .logo {
   margin-right: 5rem;
 }
 
-nav ul .logo img {
+.logo {
   width: 60px;
   height: auto;
 }
@@ -56,6 +56,8 @@ nav ul .logo img {
   background: url("/images/heroBk.svg");
   padding-top: 1rem;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .search li {
@@ -80,14 +82,16 @@ nav ul .logo img {
   justify-content: start;
   align-items: center;
   padding: 0 42px 0 42px;
-  height: inherit;
+  flex: 1;
+  /* height: inherit; */
 }
 
 .heroContent img {
   position: absolute;
-  width: 1107px;
+  /* width: 1107px;
   top: -72px;
-  left: 403px;
+  left: 403px; */
+  width: 90%;
   touch-action: none;
   pointer-events: none;
   }
@@ -553,13 +557,6 @@ footer .lowerFooter .socials a:hover {
   color: #4B188B;
 }
 
-/* all desktop */
-
-
-
-
-
-/* all mobile */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1100px) {
   .kikosi {
